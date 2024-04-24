@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 1000px;
+        }
+
+        ul{
+            width: 100%;
+            height: 40px;
+            background-color: violet;
+            padding: 10px;
+            color:#fff;
+            font-weight: bold;
+            position: fixed;
+            z-index: 2;
+        }
+        li{
+            display: inline;
+            float: left;
+            margin-right: 10px;
+
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Contato</li>
+        <li>Blog</li>
+        <li>Sobre nós</li>
+    </ul>
+    <div id="box">
+
+    </div>
+</body>
+</html>

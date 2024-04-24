@@ -1,0 +1,36 @@
+:root{
+    --bg-color: #1C1C1C;
+    --primary-color: #7253F1;
+    --secundary-color:#0d0d0d;
+    --text-color: #ffffff;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+nav .logo{
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0px 3px;
+}
