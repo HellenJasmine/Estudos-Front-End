@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+</head>
+<body id="main-body">
+
+    <h1 onclick="this.innerText = 'surpresa'">
+        Clique aqui
+    </h1>
+    <h1 onclick="document.getElementById('description').innerText = 'hello, tudo bem?'">
+        oii
+    </h1>
+    <p id="description"></p>
+    
+
+    <button id="action-button">
+        clique em mim
+    </button>
+    <input id="name-input" type="text" placeholder="name" />
+    <p  style="color: red; font-weight: bold;" id="error-message"></p>
+
+    <script>
+        const actionButton = document.getElementById('action-button');
+        const mainBody = document.getElementById('main-body');
+        actionButton.addEventListener('mouseover', function(){
+            mainBody.style.color = 'pink';
+            mainBody.style.background = 'purple';
+        
+        
+        
+        });
+        actionButton.addEventListener('mouseout', function(){
+            mainBody.style.color = 'purple';
+            mainBody.style.background = 'pink';
+        
+        
+        
+        });
+
+        const nameInput = document.getElementById('name-input');
+        const errorMessage = document.getElementById('error-message');
+        nameInput.addEventListener('change', function() {
+            if (nameInput.value.length > 0) {
+                nameInput.style.borderColor = 'green';
+                errorMessage.innerText = '';
+            } else {
+                nameInput.style.borderColor = 'red';
+                errorMessage.innerText = 'Erro, o campo não pode ser vazio!!!'
+            }
+            
+        });
+        
+        
+    </script>
+</body>
+</html>
